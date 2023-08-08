@@ -1,0 +1,453 @@
+body {
+    background-color: rgb(209, 237, 244);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+#mainNavbar {
+    background-color: rgb(133, 210, 229);
+    padding-right: 0;
+}
+
+.navbar .container {
+    margin-right: 0;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.navbar.scrolled {
+    background-color: rgb(133, 210, 229);
+    transition: background 500ms;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
+    color: black;
+}
+
+.nav-item .nav-item:hover {
+    display: flex;
+    color: black;
+
+}
+
+.nav-link {
+    padding: 0.5rem 0.5rem;
+}
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+}
+
+
+button {
+    background-color: rgb(209, 237, 244);
+    border: 2px solid rgb(133, 210, 229);
+    box-shadow: 10px 5px 5px #5D8AA8;
+    border-radius: 4px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.container-fluid1 {
+    position: relative;
+    margin-top: 0;
+}
+
+.image-container1 {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+}
+
+.Alanya {
+    max-width: 100%;
+    /* Limit the image width to fit its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.logo1 {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    max-width: 500px;
+    /* Limit the logo width */
+    /* Adjust top, left, and max-width values as needed */
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    /* Adjust bottom value as needed */
+}
+
+.text-center {
+    display: inline-block;
+    /* Additional styling for centering the button */
+}
+
+.btn {
+    background-color: rgb(209, 237, 244);
+    border: 2px solid #ccc;
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 4px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container-fluid1 {
+        margin-top: 50px;
+    }
+
+    .image-container1 {
+        display: block;
+        text-align: center;
+    }
+
+    .logo1 {
+        position: absolute;
+        margin: 2px auto;
+        max-width: 130px;
+    }
+
+    .text-overlay {
+        position: static;
+        margin: 20px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+.featured-apartments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+
+}
+
+.apartment {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.apartment img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+
+
+.containerlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.boxl {
+    width: calc(25% - 20px);
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 7%;
+}
+
+@media (max-width: 768px) {
+    .boxl {
+        width: calc(50% - 20px);
+    }
+
+    .linksa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Center content vertically */
+        height: 100%;
+        /* Fill the entire box height */
+    }
+
+}
+
+.linksa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center content vertically */
+    height: 100%;
+    /* Fill the entire box height */
+}
+
+.line {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-top: 3px solid #ccc;
+}
+
+@media screen and (min-width: 768px) {
+    .icons {
+        width: 50px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .box-container1 {
+        display: flex;
+        margin-left: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .box1 {
+        flex-basis: 100%;
+        padding: 10px;
+        text-align: center;
+        margin-left: 8%;
+    }
+
+    .box2 {
+        flex-basis: 100%;
+        padding: 20px;
+        text-align: end;
+
+    }
+
+    .boxlogo {
+        flex-basis: 100%;
+        text-align: left;
+        margin: 20px;
+        margin-right: 30px;
+    }
+
+    span {
+        display: block;
+    }
+
+    .contact {
+        display: flex;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+
+    }
+
+    .socialmedia {
+        width: 40px;
+        display: inline-block;
+    }
+
+    .buyalanya {
+        text-decoration: underline;
+        font-weight: 0.9rem;
+        margin-left: 5px;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .icons {
+        width: 50px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .box-container1 {
+        display: flex;
+        margin-left: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box1 {
+        flex-basis: 70%;
+        padding: 20px;
+        text-align: center;
+        padding-left: 8%;
+    }
+
+    .box2 {
+        flex-basis: 33.33%;
+        text-align: center;
+        margin-right: 20px;
+        margin-bottom: 5%;
+    }
+
+    .boxlogo {
+        flex-basis: 33.33%;
+        text-align: left;
+        margin: 20px;
+        margin-right: 30px;
+    }
+
+    span {
+        display: block;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+    }
+
+    .socialmedia {
+        width: 40px;
+        display: inline-block;
+    }
+
+    .buyalanya {
+        text-decoration: underline;
+        font-weight: 0.9rem;
+        margin-left: 5px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .icons {
+        width: 50px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .box-container1 {
+        display: flex;
+        margin-left: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box1 {
+        flex-basis: 100%;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    .box2 {
+        flex-basis: 33.33%;
+        text-align: center;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .boxlogo {
+        flex-basis: 33.33%;
+        text-align: left;
+        margin-right: 30px;
+    }
+
+    span {
+        display: block;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+    }
+
+    .socialmedia {
+        width: 40px;
+        display: inline-block;
+    }
+
+    .buyalanya {
+        text-decoration: underline;
+        font-weight: 0.9rem;
+        margin-left: 5px;
+    }
+}
+
+
+
+
+
+
+
+.continfo {
+    margin-left: 5px;
+}
+
+.box-container1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-top: 1%;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.footer p {
+    margin: 0;
+    padding: 10px;
+}
